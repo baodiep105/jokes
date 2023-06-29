@@ -9,18 +9,19 @@ use Illuminate\Support\Facades\Config;
 
 class JokeController extends Controller
 {
-    public function vote($id){
+    public function vote(Request $request){
+        $id=$request->id;
         $this->addCookie($id);
-        // dd($_SERVER);
         $is_joke=DB::table('joke')->where('id',$id)->exists();
         if($is_joke){
-            $vote=($_SERVER['QUERY_STRING']=="like=") ? 1 : 2 ;
+            $vote=(isset($_POST['like'])) ? 1 : 2 ;   //1: là like, 2: dislike
             $joke=DB::table('joke')->where('id',$id)->update([
                 'vote'=>$vote,
             ]);
         }
         return redirect('/');
     }
+
     public function addCookie($id){
         $name='joke';
         $value_cookie;
@@ -30,7 +31,7 @@ class JokeController extends Controller
         }
         array_push($id_joke,$id);
         $value_cookie=json_encode($id_joke,$id);
-        setcookie($name,$value_cookie, time() + 600, "/");
+        setcookie($name,$value_cookie, time() + (3600*24), "/");
     }
 
     public function getJoke(){

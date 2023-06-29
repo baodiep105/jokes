@@ -18,6 +18,6 @@ use Illuminate\Support\Facades\DB;
 //     return view('index');
 // });
 Route::get('/',[\App\Http\Controllers\JokeController::class,'getJoke']);
-Route::get('/vote/{id}',[\App\Http\Controllers\JokeController::class,'vote']);
+Route::post('/vote',[\App\Http\Controllers\JokeController::class,'vote']);
 // Route::get('/vote/{id}',[\App\Http\Controllers\JokeController::class,'addCookie']);
 
