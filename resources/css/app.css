@@ -1,0 +1,29 @@
+.main{
+    height: 700px;
+    width: 100%;
+    /* background-color: red; */
+}
+.main .header{
+    height: 100px;
+    width: 100%;
+    background-color: red;
+
+}
+.main .banner{
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+
+}
+.main .content{
+    height: 300px;
+    width: 100%;
+    background-color: green;
+
+}
+.main .footer{
+    height: 100px;
+    width: 100%;
+    background-color: brown;
+
+}

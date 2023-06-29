@@ -1,0 +1,105 @@
+.main{
+    height: 650px;
+    width: 100%;
+    /* background-color: aqua; */
+    
+}
+text{
+    font-family: Arial;
+}
+.main .header{
+    height: 10%;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+
+}
+.main .banner{
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+    color: white;
+    background-color: #29b363;
+    text-align: center;
+    align-items: center;
+
+}
+#logo{
+    margin-left: 15%;
+}
+#avatar{
+    margin-right: 15%;
+}
+.content #content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 50%;
+    width: 100%;
+}
+.content #button{
+
+    height: 50%;
+    width: 100%;
+}
+.main .content{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    height: 50%;
+    background-color: #fcfcfc;
+    border-bottom: #C0C0C0	solid 1px;
+
+}
+.content #main{
+    width: 70%;
+}
+.content #button{
+    margin-top: 5%;
+}
+
+.main .footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    background-color: #ffffff;
+
+}
+.footer #content{
+    width: 70%;
+    text-align: center;
+    align-items: center;
+}
+button{
+    border: none;
+  color: white;
+  padding: 7px 30px;
+  border: #808080 solid ;
+  border-width: 1px 1px 2px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 25%;
+  /* max-h: 50%; */
+}
+.button1{
+    background: #2c7edb;
+    margin-right: 10px;
+}
+.button2{
+    background:  #29b363;
+    margin-left: 10px;
+    
+}
+.header #avatar{
+    display: flex;
+    justify-content: space-around;
+}
